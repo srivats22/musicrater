@@ -1,0 +1,13 @@
+/*css classes for the navbar*/
+
+.navbarImagePadding{
+    width: 40px;
+    padding-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbarImagePadding{
+        padding-right: 0px;
+        justify-content: center;
+    }
+}

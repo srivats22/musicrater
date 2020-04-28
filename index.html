@@ -1,44 +1,62 @@
 <!DOCTYPE html>
-<html>
-<title>Music Rater</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<style>
-body,h1,h5 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-color: black;
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
-<body>
-    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-        <div class="w3-display-middle">
-            <center>
-                <img src="./assets/musicrater.png" style="height: 50px;">
-            </center>
-            <h1 class="w3-jumbo w3-animate-top">Music Rater</h1>
-            <p>An Application for sharing, listening and rating music</p>
-            <hr class="w3-border-grey" style="margin:auto;width:40%">
-          <br>
-          <center>
-            <button type="button" class="btn btn-outline-info">Android</button>
-            <a href="https://music-rater22.web.app/#/"><button type="button" class="btn btn-outline-info">iOS</button></a>
-          </center>
-        </div>
-        <div class="w3-display-bottomright w3-padding-large">
-          <a href="mailto:srivats.venkataraman@gmail.com">Contact</a>
-          <a href="./assets/music rater privacy.pdf">Privacy</a>
-        </div>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music Rater</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
+  <body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img class="navbarImagePadding" src="./assets/musicrater.png">
+      <a class="navbar-brand fontStyleComicNeue active" href="#">Music Rater</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link fontStyleRoboto" href="./pages/features.html">Features <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fontStyleRoboto" href="./pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="homeContainer">
+      <p class="text-center textSize fontStyleComicNeue" style="padding-top: 20px;">Share, Listen, Like</p>
     </div>
+    <center>
+      <a href='https://play.google.com/store/apps/details?id=com.app.music_rater&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+      target="_blank">
+        <img class="imgBtn" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+      </a>
+      <a href="https://music-rater22.web.app/#/" target="_blank"><button type="button" class="btn btn-outline-primary">iOS/Web</button></a>
+      <hr>
+    </center>
+    <div id="installContainer" class="hidden">
+      <button id="butInstall" type="button">
+        Install
+      </button>
+    </div>
+    <img src="./assets/screenshots.png" class="responsive w3-display-bottommiddle">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+    <script src="/script.js" defer></script>
+  </body>
 </html>
-

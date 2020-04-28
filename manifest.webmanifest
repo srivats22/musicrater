@@ -1,0 +1,21 @@
+{
+    "short_name": "Music Rater",
+    "description": "Share, Like and Listen to Music",
+    "icons": [
+      {
+        "src": "/assets/musicrater.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/musicrater.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#ffffff"
+  }
