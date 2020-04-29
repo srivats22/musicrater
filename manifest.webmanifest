@@ -3,19 +3,19 @@
     "description": "Share, Like and Listen to Music",
     "icons": [
       {
-        "src": "/assets/musicrater.png",
+        "src": "./assets/192_logo_final.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "/assets/musicrater.png",
+        "src": "./assets/512_logo_final.png",
         "type": "image/png",
         "sizes": "512x512"
       }
     ],
-    "start_url": "/",
+    "start_url": "./",
     "background_color": "#ffffff",
     "display": "standalone",
-    "scope": "/",
+    "scope": "./",
     "theme_color": "#ffffff"
   }
